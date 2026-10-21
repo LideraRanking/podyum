@@ -1,4 +1,3 @@
-
 # Sistema operacional
 .DS_Store
 Thumbs.db
@@ -29,11 +28,14 @@ replay_pid*
 # Node.js / npm
 **/node_modules/
 **/dist/
+**/dist-ssr/
 **/coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+*.local
+lerna-debug.log*
 
 # Arquivos temporários
 *.tmp
