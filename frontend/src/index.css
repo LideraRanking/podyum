@@ -45,7 +45,7 @@
   --color-foreground: var(--foreground);
   --color-background: var(--background);
 
-  /* Radius shadcn/ui */
+  /* Radius */
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -54,24 +54,20 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 
-  /* Brand Podyum */
+  /* Brand */
   --color-primary-hover: var(--primary-hover);
   --color-primary-active: var(--primary-active);
-  --color-primary-light: var(--primary-light);
   --color-primary-soft: var(--primary-soft);
-
-  --color-secondary-light: var(--secondary-light);
+  --color-secondary: var(--secondary);
   --color-brand-accent: var(--brand-accent);
 
   /* Backgrounds */
   --color-bg-base: var(--bg-base);
   --color-bg-surface: var(--bg-surface);
   --color-bg-surface-2: var(--bg-surface-2);
-  --color-bg-elevated: var(--bg-elevated);
 
   /* Borders */
   --color-border-default: var(--border-default);
-  --color-border-strong: var(--border-strong);
 
   /* Text */
   --color-text-primary: var(--text-primary);
@@ -96,25 +92,20 @@
 
   /* Brand */
   --primary: #2563eb;
-  --primary-hover: #1d4ed8;
+  --primary-hover: #1e40af;
   --primary-active: #1e40af;
-  --primary-light: #60a5fa;
   --primary-soft: #172554;
 
   --secondary: #0ea5e9;
-  --secondary-light: #38bdf8;
-
   --brand-accent: #8b5cf6;
 
-  /* Background */
+  /* Backgrounds */
   --bg-base: #070b14;
   --bg-surface: #0f172a;
   --bg-surface-2: #111827;
-  --bg-elevated: #172033;
 
   /* Borders */
   --border-default: #263247;
-  --border-strong: #334155;
 
   /* Text */
   --text-primary: #f8fafc;
@@ -133,51 +124,50 @@
   --rank-silver: #b8c0cc;
   --rank-bronze: #c9804d;
 
-  /* shadcn/ui — Dark */
-  --background: #070b14;
-  --foreground: #f8fafc;
+  /* shadcn/ui */
+  --background: var(--bg-base);
+  --foreground: var(--text-primary);
 
-  --card: #0f172a;
-  --card-foreground: #f8fafc;
+  --card: var(--bg-surface);
+  --card-foreground: var(--text-primary);
 
-  --popover: #111827;
-  --popover-foreground: #f8fafc;
+  --popover: var(--bg-surface-2);
+  --popover-foreground: var(--text-primary);
 
   --primary-foreground: #ffffff;
+  --secondary-foreground: var(--text-primary);
 
-  --secondary-foreground: #f8fafc;
+  --muted: var(--bg-surface-2);
+  --muted-foreground: var(--text-muted);
 
-  --muted: #172033;
-  --muted-foreground: #94a3b8;
+  --accent: var(--bg-surface-2);
+  --accent-foreground: var(--text-primary);
 
-  --accent: #172033;
-  --accent-foreground: #f8fafc;
+  --destructive: var(--danger);
 
-  --destructive: #ef4444;
-
-  --border: #263247;
-  --input: #263247;
-  --ring: #60a5fa;
+  --border: var(--border-default);
+  --input: var(--border-default);
+  --ring: var(--primary);
 
   /* Charts */
-  --chart-1: #2563eb;
-  --chart-2: #0ea5e9;
-  --chart-3: #8b5cf6;
-  --chart-4: #22c55e;
-  --chart-5: #f59e0b;
+  --chart-1: var(--primary);
+  --chart-2: var(--secondary);
+  --chart-3: var(--brand-accent);
+  --chart-4: var(--success);
+  --chart-5: var(--warning);
 
   /* Radius */
   --radius: 0.75rem;
 
   /* Sidebar */
-  --sidebar: #0f172a;
-  --sidebar-foreground: #f8fafc;
-  --sidebar-primary: #2563eb;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #172033;
-  --sidebar-accent-foreground: #f8fafc;
-  --sidebar-border: #263247;
-  --sidebar-ring: #60a5fa;
+  --sidebar: var(--bg-surface);
+  --sidebar-foreground: var(--text-primary);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
 }
 
 @layer base {
