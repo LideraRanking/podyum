@@ -9,7 +9,7 @@
   --font-heading: var(--font-sans);
   --font-sans: "Inter Variable", sans-serif;
 
-  /* shadcn/ui */
+  /* shadcn/ui: Sidebar */
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -19,12 +19,14 @@
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
 
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
+  /* Charts */
   --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
 
+  /* shadcn/ui: Semantic colors */
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -58,13 +60,13 @@
   --color-primary-hover: var(--primary-hover);
   --color-primary-active: var(--primary-active);
   --color-primary-soft: var(--primary-soft);
-  --color-secondary: var(--secondary);
   --color-brand-accent: var(--brand-accent);
 
   /* Backgrounds */
   --color-bg-base: var(--bg-base);
+  --color-bg-sidebar: var(--bg-sidebar);
   --color-bg-surface: var(--bg-surface);
-  --color-bg-surface-2: var(--bg-surface-2);
+  --color-bg-hover: var(--bg-hover);
 
   /* Borders */
   --color-border-default: var(--border-default);
@@ -95,17 +97,17 @@
   --primary-hover: #1e40af;
   --primary-active: #1e40af;
   --primary-soft: #172554;
-
   --secondary: #0ea5e9;
   --brand-accent: #8b5cf6;
 
   /* Backgrounds */
-  --bg-base: #070b14;
-  --bg-surface: #0f172a;
-  --bg-surface-2: #111827;
+  --bg-base: #111214;
+  --bg-sidebar: #18191c;
+  --bg-surface: #1c1e22;
+  --bg-hover: #23262b;
 
   /* Borders */
-  --border-default: #263247;
+  --border-default: #2d3036;
 
   /* Text */
   --text-primary: #f8fafc;
@@ -131,16 +133,16 @@
   --card: var(--bg-surface);
   --card-foreground: var(--text-primary);
 
-  --popover: var(--bg-surface-2);
+  --popover: var(--bg-surface);
   --popover-foreground: var(--text-primary);
 
   --primary-foreground: #ffffff;
   --secondary-foreground: var(--text-primary);
 
-  --muted: var(--bg-surface-2);
+  --muted: var(--bg-surface);
   --muted-foreground: var(--text-muted);
 
-  --accent: var(--bg-surface-2);
+  --accent: var(--bg-hover);
   --accent-foreground: var(--text-primary);
 
   --destructive: var(--danger);
@@ -160,7 +162,7 @@
   --radius: 0.75rem;
 
   /* Sidebar */
-  --sidebar: var(--bg-surface);
+  --sidebar: var(--bg-sidebar);
   --sidebar-foreground: var(--text-primary);
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
