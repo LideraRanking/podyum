@@ -1,176 +1,103 @@
 "use client"
 
 import * as React from "react"
-
 import { NavMain } from "@/components/nav-main"
 import { NavProjects } from "@/components/nav-projects"
 import { NavUser } from "@/components/nav-user"
 import { TeamSwitcher } from "@/components/team-switcher"
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarHeader,
-  SidebarRail,
-} from "@/components/ui/sidebar"
-import { GalleryVerticalEndIcon, AudioLinesIcon, TerminalIcon, TerminalSquareIcon, BotIcon, BookOpenIcon, Settings2Icon, FrameIcon, PieChartIcon, MapIcon } from "lucide-react"
+import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail } from "@/components/ui/sidebar"
+import { BuildingComplex, House, Trophy, LayoutDashboard, CircleDollarSign, Users, User, ChartNoAxesColumn, Gift, Settings2 } from "lucide-react"
 
 // This is sample data.
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
+    name: "Vitor Paloco",
+    email: "vitor.paloco@podyum.com",
     avatar: "/avatars/shadcn.jpg",
   },
   teams: [
     {
-      name: "Acme Inc",
-      logo: (
-        <GalleryVerticalEndIcon
-        />
-      ),
-      plan: "Enterprise",
+      name: "Empresa A",
+      logo: (<BuildingComplex/>),
+      plan: "Plano Pro",
     },
     {
-      name: "Acme Corp.",
-      logo: (
-        <AudioLinesIcon
-        />
-      ),
-      plan: "Startup",
+      name: "Empresa B",
+      logo: (<BuildingComplex/>),
+      plan: "Plano Básico",
     },
     {
-      name: "Evil Corp.",
-      logo: (
-        <TerminalIcon
-        />
-      ),
-      plan: "Free",
+      name: "Empresa C",
+      logo: (<BuildingComplex/>),
+      plan: "Plano Plus",
     },
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Início",
       url: "#",
-      icon: (
-        <TerminalSquareIcon
-        />
-      ),
+      icon: (<House/>),
       isActive: true,
+      items: [],
+    },
+    {
+      title: "Ranking",
+      url: "#",
+      icon: (<Trophy/>),
+      items: [],
+    },
+    {
+      title: "Campanhas",
+      url: "#",
+      icon: (<LayoutDashboard/>),
       items: [
         {
-          title: "History",
+          title: "Em andamento",
           url: "#",
         },
         {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
+          title: "Encerradas",
           url: "#",
         },
       ],
     },
     {
-      title: "Models",
+      title: "Vendas",
       url: "#",
-      icon: (
-        <BotIcon
-        />
-      ),
-      items: [
-        {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Documentation",
-      url: "#",
-      icon: (
-        <BookOpenIcon
-        />
-      ),
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Settings",
-      url: "#",
-      icon: (
-        <Settings2Icon
-        />
-      ),
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
+      icon: (<CircleDollarSign/>),
+      items: [],
     },
   ],
   projects: [
     {
-      name: "Design Engineering",
+      name: "Empresas",
       url: "#",
-      icon: (
-        <FrameIcon
-        />
-      ),
+      icon: (<BuildingComplex/>),
     },
     {
-      name: "Sales & Marketing",
+      name: "Usuários",
       url: "#",
-      icon: (
-        <PieChartIcon
-        />
-      ),
+      icon: (<User/>),
     },
     {
-      name: "Travel",
+      name: "Perfis",
       url: "#",
-      icon: (
-        <MapIcon
-        />
-      ),
+      icon: (<Users/>),
+    },
+    {
+      name: "Relatórios",
+      url: "#",
+      icon: (<ChartNoAxesColumn/>),
+    },
+    {
+      name: "Pontuação & Prêmios",
+      url: "#",
+      icon: (<Gift/>),
+    },
+    {
+      name: "Configurações",
+      url: "#",
+      icon: (<Settings2/>),
     },
   ],
 }

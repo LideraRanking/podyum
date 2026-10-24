@@ -10,7 +10,7 @@ const previewImages = [
   { src: "/src/assets/preview3.png", alt: "Apresentação da plataforma 3" },
 ]
 
-export default function LoginPage() {
+export default function Login() {
   return (
     <div className="grid min-h-svh lg:grid-cols-[60%_40%]">
       <div className="relative hidden h-full max-h-svh bg-muted lg:block overflow-hidden">
